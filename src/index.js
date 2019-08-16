@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   newTaskForm.addEventListener("submit", createNewTask);
 });
 
-const createNewTask = event {
+const createNewTask = event => {
   event.preventDefault();
 
   const newTaskDescription = document.getElementById("new-task-description");
@@ -21,6 +21,6 @@ const createNewTask = event {
   event.target.reset();
 };
 
-const appendNewTask = task {
+const appendNewTask = task => {
   document.getElementById("tasks").appendChild(task);
 };
