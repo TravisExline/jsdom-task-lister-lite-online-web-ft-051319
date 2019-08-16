@@ -1,3 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // your code here
+  const input = document.getElementById('input')
+  input.addEventListener('submit', function(event) {
+    event.preventDefault()
+  })
 });
